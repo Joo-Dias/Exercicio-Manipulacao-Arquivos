@@ -15,8 +15,9 @@ public class Main {
 		String nome = "teste";
 		
 		try {
-			// arqCont.readDir(dirWin);
-			arqCont.createFile(path, path);
+			arqCont.readDir(dirWin);
+			arqCont.createFile(path, nome);
+			arqCont.readFile(path, nome);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
